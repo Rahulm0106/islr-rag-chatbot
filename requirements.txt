@@ -1,0 +1,23 @@
+# ── Core RAG stack ──────────────────────────────────────────
+pymupdf==1.24.5                  # PDF extraction
+langchain==0.2.16                # RAG orchestration
+langchain-community==0.2.16      # ChromaDB + BM25 integrations
+langchain-groq==0.1.9            # Groq LLM wrapper
+
+# ── Vector DB ───────────────────────────────────────────────
+chromadb==0.5.5                  # Local vector DB (Saturday)
+pgvector==0.3.2                  # Postgres vector extension (Sunday)
+psycopg2-binary==2.9.9           # Postgres driver
+
+# ── Embeddings ──────────────────────────────────────────────
+sentence-transformers==3.0.1     # Local embedding model (free, no API)
+
+# ── Advanced RAG (Sunday) ────────────────────────────────────
+rank-bm25==0.2.2                 # BM25 keyword search for hybrid RAG
+ragas==0.1.21                    # RAG evaluation metrics
+
+# ── Utilities ───────────────────────────────────────────────
+python-dotenv==1.0.1             # Load .env API keys
+tiktoken==0.7.0                  # Token counting
+pandas==2.2.2                    # For eval results table
+rich==13.7.1                     # Pretty terminal output
